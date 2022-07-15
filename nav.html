@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        nav{
+            display: flex;
+            background-color: black;
+            justify-content: space-between;
+            padding: 10px;
+        }
+        li{
+            display: inline;
+            
+            padding: 10px;
+        }
+        a{
+            text-decoration: none;
+            color: white;  
+        }
+        a:hover{
+            color: red;
+        }
+        .logo{
+            color: white;
+        }
+        @media screen  and (max-width:600px)  {
+            li{
+                display: block;
+                text-align: center;
+            }
+            nav{
+                display: block;
+            }
+            .last{
+                text-align: center;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">ASURRED WEARS</div>
+        <ul>
+            <li><a href="#">Home</a> </li>
+            <li><a href="#"> About</a></li>
+            <li><a href="#"> Collection</a></li>
+            <li><a href="#"> Contact</a></li>
+        </ul>
+        <div class="last">
+            <input type="text" placeholder="Search">
+        </div>
+    </nav>
+</body>
+</html>

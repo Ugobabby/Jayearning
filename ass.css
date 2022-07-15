@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    border-radius: 10px;
+    background-color: black;
+    border: none;
+}
+header{
+    width: 100%;
+    height: 100vh;
+}
+nav{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    
+}
+.logo{
+    padding-left: 30px;
+    color: #90ee90;
+    width: 20%;
+ 
+}
+.list{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+.link{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    font-size: 13px;
+    transition: 0.5s;
+}
+.link:hover{
+    color: red;
+    opacity: 0.7;
+}
+.link:active{
+    color: white;
+    opacity: 0.6;
+}
+
+.details{
+    width: 28%;
+    font-size: 18px;
+}
+.up{
+    color: white;
+    text-decoration: none;
+    float: right;
+    padding-right: 10px;
+    justify-content: space-around;
+    transition: 0.5s;
+}
+.up:hover{
+    color: red;
+    opacity: 0.7;
+}.up:active{
+    color: white;
+    opacity: 0.6;
+}
+.sign{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #90ee90;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+.sign:hover{
+  box-shadow: 5px 5px 5px white;
+  color: red;
+  opacity: 1;
+}
+.sign:active{
+    color: #90ee90;
+    background-color: white;
+    opacity: 1;
+}
+.main{
+    
+    
+    position: relative;
+    width: 100%;
+    height: 90vh;
+}
+.main-left{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 65%;
+
+}.banner{
+    height: 100%;
+    width: 100%;
+   display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+.text h3{
+    font-size: 30px;
+    letter-spacing: 0.4px;
+    color: white;
+    text-align: center;
+    
+}
+.text h3 span{
+    font-size: 30px;
+    padding-right: 30px;
+}

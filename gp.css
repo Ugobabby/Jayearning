@@ -1,0 +1,185 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+
+header{
+    height: 100vh;
+    width: 100%;
+    color: white;
+}
+
+nav{
+background-color: black;
+height: 10vh;
+width: 100%;
+display: flex;
+align-items: center;
+}
+.logo{
+    width: 30%;
+    padding-left: 50px;
+    color: white;
+}
+
+.list-items{
+    display: flex;
+    list-style: none;
+    width: 60%;
+    justify-content: space-around;
+}
+
+.link{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    font-size: 13px;
+    transition: 0.5s;
+}
+.link:hover{
+    color: red;
+}
+
+.nav-btns{
+    width: 10%;
+    font-size: 20px;
+}
+
+.btn-nav{
+    color: white;
+    float: right;
+    padding-right: 20px;
+    transition: 0.5s;
+}
+.btn-nav:hover{
+    color: red;
+}
+.main{
+    background-color: black;
+    position: relative;
+    height: 90vh;
+    width: 100%;
+}
+.main-left{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 65%;
+}
+.social{
+    position: absolute;
+    height: 100%;
+    width: 70px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.social::before{
+    content:" ";
+    position: absolute;
+    width: 2px;
+    height: 30%;
+    background-color: white;
+    top: 20px;
+
+}
+
+.social::after{
+    content:" ";
+    position: absolute;
+    width: 2px;
+    height: 30%;
+    background-color: white;
+    bottom: 20px;
+
+}
+
+
+.s-btn{
+    color: wheat;
+    margin-top: 20px;
+    font-size: 20px;
+    transition: 0.5s;
+}
+.s-btn:hover{
+    color: #db5dab;
+}
+.banner{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.wears h1{
+    text-align: center;
+    font-size: 4rem;
+    letter-spacing: 0.5rem;
+    color: white;
+}
+
+.wears span{
+    color: #db5dab;
+    
+}
+.btn{
+    margin-top: 20px;
+    text-decoration: none;
+    color: white;
+    border: solid 1px white;
+    padding: 20px 40px;
+    transition: 0.5s;
+   background-color: red;
+   
+}
+.btn:hover{
+    background-color: #db5dab;
+     
+}
+
+
+.main-right{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 35%;
+    background-color: black;
+}
+.main-right img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    background-color: black;
+    animation: animation 5s forwards;
+    animation-delay: 15;
+}
+
+@keyframes animation{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@media screen  and (max-width:600px)  {
+    li{
+        display: block;
+        text-align: center;
+    }
+    nav{
+        display: block;
+    }
+    .last{
+        text-align: center;
+    }
+    
+}

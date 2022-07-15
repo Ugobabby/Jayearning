@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table</title>
+  <style>
+    div{
+      background-color:red ;
+      width: 300px;
+      margin-left: auto;
+     margin-right: auto;
+    }
+
+    table,td,th{
+      border: 1px solid white;
+      margin-bottom: 40px;
+      border-collapse:collapse;
+    }
+
+    table{
+      width: 100%;
+    }
+    th{
+      background-color: blue;
+      color: white;
+    }
+
+    tr:nth-child(even){
+      background-color: aqua;
+    }
+
+    td{
+      text-align: center;
+      
+    }
+
+    tr:hover {
+      background-color: silver;
+    }
+
+    .name{
+      color: violet;
+      background-color: blue;
+    }
+
+    
+   
+
+    .picture{
+     width: 32.5%;
+    }
+
+    .ra{
+      width: 500px;
+      display: inline-block;
+      width: 32.7% ;
+      
+    }
+      </style>
+ 
+<body>
+  <div>
+  <table>
+    
+      
+      <th><b> First Name</b> </th>
+      <th class="name"><b>Last Name </b> </th>
+      <th><b> Location</b></th>
+    </tr>
+    <tr>
+      <td> Ugochi</td>
+      <td class="name">Udeagha</td>
+      <td>Lagos</td>
+    </tr>
+    <tr>
+      <td>Gospel</td>
+      <td class="name">Alozie</td>
+      <td>Sokoto</td>
+     
+    </tr>
+    <tr>
+      <td>Mercy</td>
+      <td class="name">Abel</td>
+      <td>Abuja</td>
+    
+    </tr>
+
+    <tr>
+      <td >Emmanuel</td>
+      <td class="name">Ben</td>
+      <td>Imo</td>
+    
+    </tr>
+  </table>
+  </div>
+
+  <img class="picture" src="hardware.jpg" alt="picture">
+  <img class="picture" src="power.jpg" alt="">
+  <img class="ra" src="cpu.jpeg" alt="">
+</body>
+</html>
