@@ -1,0 +1,184 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: orange;
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+ 
+ 
+}
+ul{
+    display: flex;
+}
+li{
+    list-style: none;
+    
+  width: 50%;
+}
+.point{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    padding-right: 50px;
+    transition: 0.5s;
+    
+
+  
+}
+.point:hover{
+    color: red;
+}
+.logo{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 20%;
+    padding-left: 30px;
+}
+    .icon{
+        margin-right: 25px;
+    }
+
+.ico{
+    display: flex;
+    
+   
+}
+.bi2{
+    margin-right: 20px;
+    border-radius: 100%;
+    color: rgb(126, 0, 0);
+    background-color: orange;
+   border: solid rgb(126, 0, 0) 0.5px;
+   cursor: pointer;
+   transition: 0.5s;
+   
+}
+.bi2:hover{
+    color: white;
+    background-color: black;
+    border: none;
+    
+}
+.main1{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+.left{
+width: 50%;
+padding-left: 100px;
+padding-top: 100px;
+
+
+}
+.food{
+    font-style: italic;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 10px;
+}
+.live{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    padding-right: 58px;
+    line-height: 30px;
+    padding-bottom: 10px;
+    font-size: 25px;
+}
+.kind{
+    font-size: 12px;
+    line-height: 15px;
+    color: white;
+    padding-bottom: 30px;
+}
+.order{
+    
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 15px;
+    padding-top: 5px;
+    background-color: white;
+    font-weight: bold;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    margin-bottom: 60px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.order:hover{
+  color: white;
+    background-color: black;
+}
+
+.right{
+    width: 50%;
+    padding-top: 80px;
+   
+}
+.picture{
+    width: 450px;
+    padding-right: 50px;
+    padding-bottom: 5px;
+    filter: drop-shadow(10px 10px 10px 10px rgb(0, 0, 0, 0.6));
+  
+    
+  
+}
+
+.box{
+    background-color: white;
+    border-radius: 100%;
+    
+    display: inline-block;
+    transition: 0.5s;
+   padding: 5px;
+   cursor: pointer;
+   
+}
+.box:hover{
+    background-color: red;
+}
+.bi3{
+    margin-right: 20px;
+    border-radius: 100%;
+    color: orange;
+    background-color: black;
+   border: solid black 1;
+   cursor: pointer;
+}
+.bi3:hover{
+    color: red;
+    border: none;
+    background-color: white;
+}
+.bi4{
+    margin-right: 20px;
+    cursor: pointer;
+    color: black;
+    border: none;
+   
+}
+.bi4:hover{
+    color: red;
+}
+.go{
+    margin-top: 70px ;
+}
+.bi{
+    transition: 0.5s;
+    cursor: pointer;
+}
+.bi:hover{
+    color: white;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+       .box{
+           display: flex;
+           width: auto;
+           background-color: blue;
+           height: 400px;
+           align-items: center;
+           justify-content: center;
+       }
+       input[type=text]{
+           padding: 5px;
+           background-color: aqua;
+           border: none;
+           border-radius: 20px;
+           margin-top: 3px;
+           width: 100%;
+       }
+       input[type=text]:focus{
+           background-color: brown;
+       }
+       input[type=submit]:hover{
+           background-color: brown;
+       }
+       .text{
+           width: 200px;
+           height: auto;
+           background-color: red;
+           margin-top: 3px;
+       }
+       input[type=submit]{
+           padding: 10px;
+           width: 100%;
+           border: none;
+           
+           background-color: aqua;
+           border-radius: 10px;
+       }
+        
+    </style>
+</head>
+<body> 
+    <div class="box">
+        <div class="text">
+    <input type="text" placeholder="First Name"> <br> <br>
+    <input type="text" placeholder="Last Name"> <br> <br>
+    
+    <input type="Submit">
+</div>
+</div>
+</body>
+</html>

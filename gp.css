@@ -136,11 +136,11 @@ align-items: center;
     border: solid 1px white;
     padding: 20px 40px;
     transition: 0.5s;
-   background-color: red;
+   background-color: #db5dab;
    
 }
 .btn:hover{
-    background-color: #db5dab;
+    background-color: red;
      
 }
 
@@ -160,6 +160,8 @@ align-items: center;
     background-color: black;
     animation: animation 5s forwards;
     animation-delay: 15;
+    padding-right: 150px;
+    padding-top: 20px;
 }
 
 @keyframes animation{
