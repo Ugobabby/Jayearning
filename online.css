@@ -237,15 +237,5 @@ a{
     
    
  }
- @media screen and (max-width:600px) {
-     li{
-         display: inline;
-     }
-     nav{
-         display: flex;
-     }
-     *{
-         background-color: black;
-         box-sizing: border-box;
-     }
- }
+
+ 
