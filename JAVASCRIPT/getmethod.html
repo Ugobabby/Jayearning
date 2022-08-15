@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARRAY</title>
+</head>
+<body>
+    <div id="default" style="text-align: center;"></div>
+
+
+
+<script>
+    var person = {
+        firstName : "Ugochi",
+        secondName : "Grace",
+        language : 'igbo',
+        get lang(){
+            return this. language
+        },
+        get sonsName() {
+            return this .secondName
+        }
+    }
+    // document.getElementById('default').textContent = person.lang
+    document.getElementById('default').textContent = person.lang
+    document.getElementById('default').textContent = person.sonsName
+    console.log(person.sonsName)
+
+    //journals start
+    var person1 ={
+        firstName: 'Gospel',
+        secondName: 'Okwuchukwu',
+        lastName: 'Akachukwu',
+        fathersName: "",
+        set name2(name2){
+            this.fathersName = name2.toUpperCase();
+        }
+    }
+    person1.name2 ='Alozie'
+    document.getElementById('default').textContent = person1.fathersName
+
+</script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body{
+        height: 200vh;
+    }
+    .content{
+        width: 550px;
+        border: 2px solid black;
+        margin: 50px auto;
+    }
+    .box{
+        width: 150px;
+        height: 150px;
+        position: relative;
+    }
+    .one{
+        background-color: green;
+        position: absolute;
+        left: 0;
+        top: 0;
+      
+        
+    }
+    .two{
+        background-color: yellow;
+        position: absolute;
+        left: 123px;
+        top: 15px;
+        z-index: 1;
+    }
+    .three{
+        background-color: red;
+        position: absolute;
+        left: 175px;
+        top: 5px;
+        z-index: 2;
+    }
+    .four{
+        background-color: orange;
+        position: absolute;
+        left: 45px;
+        top: 80px;
+        z-index: 3;
+    }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="box one"></div>
+        <div class="box two"></div>
+        <div class="box three"></div>
+        <div class="box four"></div>
+    </div>
+ </body>
+</body>
+</html>

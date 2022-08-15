@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VARIABLE</title>
+    <style>
+        .hel{
+            background-color: red;
+            display: grid;
+            gap: 3px;
+            height: 500px;
+            place-content: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hel">
+        <input type="text" id="color">
+        <button>Change color</button>
+    </div>
+
+   
+
+            <script>
+        var button = document.querySelector('button');
+        button.onclick = function (){
+            var mine = document.querySelector('#color').value;
+            console.log(mine)
+            document.querySelector('div').style.backgroundColor = mine;
+        }
+
+       
+
+                
+                var a, b , c;
+             a = 7
+             b= 9
+             c= 10
+
+             name = 'ugochi'
+             name = 'Grace'
+
+                console.log(name)
+              console.log('My name is ' , name)
+              console.log(` My name is ${name}`)
+              console.log(a)
+              console.log(b)
+              console.log(c)
+              console.log(a + b);
+              console.log(a-b)
+              console.log(a*b)
+              console.log(7/10)
+              console.log(b%a)
+              
+            </script>
+</body>
+</html>

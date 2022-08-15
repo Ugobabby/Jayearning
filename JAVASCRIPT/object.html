@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OBJECT</title>
+</head>
+<body>
+    <div id="default"></div>
+
+
+
+
+
+
+
+   <script>
+    var C= {
+        firstname: ' Ugochi ',
+        midname:"Grace ",
+        lastname:"Udeagha ",
+        NIN: 222222222222222,
+        fullName : function(){
+            return this.firstname + " " + this. 
+              midname + this.lastname ;
+        }
+    };
+    document.getElementById('default').textContent =  C.fullName();
+
+
+
+
+
+    var benz = {type:'GLK',Model:550,color:'silver'}
+    console.log(benz)
+    console.log(benz.Model)
+    console.log(benz.color)
+    console.log(benz.type)
+   </script>
+</body>
+</html>
