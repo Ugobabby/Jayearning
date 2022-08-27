@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do</title>
+    <style>
+        *{
+            margin:0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .box{
+            width: auto;
+            background-color: red;
+            height: 400px;
+            display: grid;
+            place-content: center;
+
+        }
+        input, button{
+            padding: 5px;
+            margin: 5px;
+            border: none;
+        }
+      input:focus{
+        background-color: blue;
+      }
+      button:hover{
+        background-color: blueviolet;
+      }
+      li{
+      
+      
+        color: white;
+      
+      }
+      h1{
+        color: blue;
+      }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>TODO LIST</h1>
+        <input type="text" id="tex">
+        <button class="submit">Submit</button>
+        <ol>
+
+        </ol>
+    </div>
+
+    <script>
+       var submit = document.querySelector('button');
+      
+      var text = document.querySelector("#tex");
+
+      submit.addEventListener('click', function(){
+        
+          var text = document.querySelector("#tex").value
+          var box = document.querySelector("#tex");
+          console.log(text);
+          li = document.createElement('li');
+          li.innerHTML = text;
+          var list = document.querySelector("ol")
+          list.append(li)
+          box.value = '';
+          submit.disabled = true; 
+      })
+      submit.disabled = true;
+   text.onkeyup = function (){
+      if (text.value.length > 0){
+          submit.disabled = false;
+      }
+      else{
+          submit.disabled = true;
+      }
+   }
+    </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COUNTER</title>
+</head>
+<body>
+    <h1>0</h1>
+    <button class="one">Decrease</button>
+    <button class="two">Reset</button>
+    <button class="three">Increase</button>
+
+
+    <script>
+        let head = document.querySelector('h1');
+        let one = document.querySelector(".one");
+        let two = document.querySelector(".two");
+        let three = document.querySelector(".three");
+                Count = 0;
+
+        one.onclick = function() {
+
+            count--;
+            head.innerHTML = count;
+            if(count > 0){
+            head.style.color = "green"
+        }else if (count < 0){
+            head.style.color ="red"
+        }else{
+            head.style.color = "blue"
+        }
+        }
+
+        two.onclick = function() {
+            count = 0;
+            head.innerHTML = count;
+            if(count > 0){
+            head.style.color = "green"
+        }else if (count < 0){
+            head.style.color ="red"
+        }else{
+            head.style.color = "blue"
+        }
+        }
+
+        three.onclick = function() {
+            count++;
+            head.innerHTML = count;
+            if(count > 0){
+            head.style.color = "green"
+        }else if (count < 0){
+            head.style.color ="red"
+        }else{
+            head.style.color = "blue"
+        }
+        }
+       
+
+    </script>
+</body>
+</html>

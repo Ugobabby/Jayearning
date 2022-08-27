@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            width: auto;
+            height: 700px;
+            background-color: red;
+            display: grid;
+            place-content: center;
+            gap: 10px;
+        }
+        button{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div class="box">
+        <h1>COLOR  VALUE</h1>
+        <button>CHANGE Color</button>
+    </div>
+
+
+    <script>
+        let box = document.querySelector('.box')
+        let head = document.querySelector('h1')
+        let btn = document.querySelector('button')
+
+        btn.addEventListener('click', function(){
+            let color = [1, 2, 3, 4, 5, 6, 7, 8, 9, 'A', 'B', 'C', 'D', 'E', 'F']
+            let hex = '#'
+         
+            for (i = 0;  i < 6;  i++){
+                let cool = (Math.floor(Math.random()*color.length)) 
+                let colors = color[cool]
+                let original = hex += colors;
+                box.style.backgroundColor = original;
+                head.textContent = original;
+                
+                console.log(hex += colors);
+            
+            }
+                
+      
+
+        })
+    </script>
+</body>
+</html>

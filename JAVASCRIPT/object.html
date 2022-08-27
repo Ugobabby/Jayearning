@@ -16,7 +16,33 @@
 
 
    <script>
-    var C= {
+    let laptop ={laptopName: "DELL",
+         Ram: "6gb Ram",
+          Rom: "500gb",
+           size:"14inches"
+    };
+console.log(laptop.Ram)
+console.log(`The value of the ram is ${laptop.Ram}`)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    let C= {
         firstname: ' Ugochi ',
         midname:"Grace ",
         lastname:"Udeagha ",
@@ -26,6 +52,10 @@
               midname + this.lastname ;
         }
     };
+        if (c) {
+        alert ("My names are Udeagha Ugochi Grace")
+       } 
+       
     document.getElementById('default').textContent =  C.fullName();
 
 

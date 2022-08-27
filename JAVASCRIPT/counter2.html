@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COUNTER 2</title>
+    <style>
+        body{
+            background-color: red;
+            display: grid;
+            place-content: center;
+            text-align: center;
+            padding: 20px;
+            width: auto;
+            height: 400px;
+        }
+        button{
+          margin-top: 10px;
+          border-radius: 20px;
+          border: none;
+          padding: 10px;
+        }
+    </style>
+  
+</head>
+<body>
+    <h1>0</h1>
+    <button class="one decrease">Decrease</button>
+    <button class="two reset">Reset</button>
+    <button class="three increase">Increase</button>
+    <button class="four hel">Increment</button>
+
+
+    <script>
+        let head = document.querySelector('h1');
+        let count = 0;
+        let btn = document.querySelectorAll('button')
+        btn.forEach(function (each) {
+            each.onclick = function (list){
+                console.log(list.currentTarget.classList)
+            mine = list.currentTarget.classList;
+              if(mine.contains('decrease')){
+                count--;
+                head.innerHTML = count;
+              }
+              else if(mine.contains('increase')){
+                count++;
+                head.innerHTML = count;
+              }
+            else if (mine.contains('reset')){
+                count = 0;
+                head.innerHTML = count;
+            }
+            if (count > 0){
+                head.style.color = 'green'
+            }else if (count < 0){
+                head.style.color = 'orange'
+            }else {head.style.color = 'blue'}
+            
+           
+
+              
+
+
+
+            }
+        })
+    </script>
+
+
+
+</body>
+</html>
